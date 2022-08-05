@@ -11,5 +11,6 @@ export default createGlobalStyle`
 	body{
 		background-color: #121212;
 		color: #fff;
+		font-family: 'Prompt';
 	}
 `;
