@@ -9,8 +9,9 @@ export default createGlobalStyle`
 	}
 
 	body{
-		background-color: #121212;
+		background-color: #0E141B;
 		color: #fff;
 		font-family: 'Prompt';
+		height: 100vh;
 	}
 `;
