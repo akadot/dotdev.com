@@ -10,7 +10,7 @@ export default function Index() {
       <Menu />
       <ImpactText />
       <SocialBar />
-      <p>Made with 🌻☕🎧 by akadot.</p>
+      <p style={{ color: "#717171" }}>Made with 🌻☕🎧 by akadot.</p>
     </Container>
   );
 }
