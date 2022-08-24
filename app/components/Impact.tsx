@@ -7,17 +7,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
 `;
 
 const TypeTextContainer = styled.section`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap:1rem;
+	gap:1.3rem;
 
-	font-size: 5rem;
+	font-size: 6rem;
 	font-weight: 600;
+	margin-top: 2rem;
 `;
 
 const TypewriterText = styled.span`
@@ -26,7 +26,7 @@ color: #FEEF2A;
 
 const SubTextComponent = styled.p`
 color: #b9b9b9;
-margin-top: 1.3rem;
+margin-top: 1.1rem;
 `;
 
 const ImpactText = () => {
