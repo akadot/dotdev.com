@@ -7,6 +7,7 @@ const MenuItem = styled.a`
 	padding: 0 .3rem;
 	transition: all 0.2s ease-in-out;
 	cursor: pointer;
+	z-index: 0;
 
 	&::before{
 		content: "";
