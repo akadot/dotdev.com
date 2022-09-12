@@ -1,14 +1,8 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node";
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+import { Links, Scripts, ScrollRestoration, LiveReload, Meta, Outlet } from "@remix-run/react";
 
-import GlobalStyle from './styles/global'
+import GlobalStyle, { Container, Footer } from './styles/global';
+import Menu from "./styles/menu";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -35,7 +29,13 @@ export default function App() {
           : null}
       </head>
       <body>
-        <Outlet />
+
+        <Container>
+          <Menu />
+          <Outlet />
+          <Footer>Made with 🌻☕🎧 by akadot.</Footer>
+        </Container>
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
