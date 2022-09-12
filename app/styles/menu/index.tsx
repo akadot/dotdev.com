@@ -14,10 +14,10 @@ gap: 4rem;
 const Menu = () => {
 	return (
 		<Container>
-			<MenuItem>home</MenuItem>
+			<MenuItem href="/">home</MenuItem>
 			<MenuItem>about</MenuItem>
 			<MenuItem>projects</MenuItem>
-			<MenuItem>blog</MenuItem>
+			<MenuItem href="/blog">blog</MenuItem>
 		</Container>
 	);
 }

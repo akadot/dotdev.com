@@ -1,16 +1,12 @@
-import Menu from "~/components/Menu";
-import Container from "~/components/Container";
-import ImpactText from "~/components/Impact";
-import SocialBar from "~/components/SocialBar";
-
+import ImpactText from "~/styles/home/Impact";
+import SocialBar from "~/styles/home/SocialBar";
 
 export default function Index() {
   return (
-    <Container>
-      <Menu />
+    <>
       <ImpactText />
       <SocialBar />
-      <p style={{ color: "#717171" }}>Made with 🌻☕🎧 by akadot.</p>
-    </Container>
+    </>
+
   );
 }
