@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Github, LinkedinSquare, DevTo, MediumSquare, Twitter } from '@styled-icons/boxicons-logos';
 
-const Container = styled.section`
+const SocialContainer = styled.section`
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -41,13 +41,13 @@ transition: all .2s ease-in-out;
 
 const SocialBar = () => {
 	return (
-		<Container>
+		<SocialContainer>
 			<Item href="#" target={"_blank"}><Github size="26" /></Item>
 			<Item href="#" target={"_blank"}><LinkedinSquare size="26" /></Item>
 			<Item href="#" target={"_blank"}><DevTo size="26" /></Item>
 			<Item href="#" target={"_blank"}><MediumSquare size="26" /></Item>
 			<Item href="#" target={"_blank"}><Twitter size="26" /></Item>
-		</Container>
+		</SocialContainer>
 	)
 }
 

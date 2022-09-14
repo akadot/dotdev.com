@@ -1,5 +1,5 @@
-import ImpactText from "~/styles/home/Impact";
-import SocialBar from "~/styles/home/SocialBar";
+import ImpactText from "~/components/home/Impact";
+import SocialBar from "~/components/home/SocialBar";
 
 export default function Index() {
   return (
