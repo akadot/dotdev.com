@@ -2,7 +2,7 @@ import type { MetaFunction, LinksFunction } from "@remix-run/node";
 import { Links, Scripts, ScrollRestoration, LiveReload, Meta, Outlet } from "@remix-run/react";
 
 import GlobalStyle, { Container, Footer } from './styles/global';
-import Menu from "./styles/menu";
+import Menu from "./components/menu";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
