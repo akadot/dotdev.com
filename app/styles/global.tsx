@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import cloudsBg from "~/styles/assets/clouds-bg-opacity.png"
 
 
 export const Container = styled.section`
@@ -6,12 +7,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
-padding: 2.5rem 1rem;
 height: 100%;
-flex-wrap: wrap;
 `;
 
 export const Footer = styled.p`
+position: sticky;
+padding-top: .5rem;
+padding-bottom: 1rem;
 color: "#717171";
 `;
 
@@ -24,9 +26,10 @@ export default createGlobalStyle`
 	}
 
 	body{
-		background-color: #0E141B;
+		background-image:url(${cloudsBg});
+		background-size:cover;
 		color: #fff;
 		font-family: 'Prompt';
-		height: 100vh;
+		height: 100%;
 	}
 `;

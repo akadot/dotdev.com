@@ -1,6 +1,7 @@
-interface Post {
+export interface Post {
 	id: number;
 	title: string;
+	description: string,
 	url: string;
 	cover_image: string;
 	tag_list: string[];
@@ -16,6 +17,7 @@ export async function getDEVTOPosts(): Promise<Post[]> {
 		return {
 			id: post.id,
 			title: post.title,
+			description: post.description,
 			url: post.url,
 			cover_image: post.cover_image,
 			tag_list: post.tag_list,

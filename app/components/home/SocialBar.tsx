@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "@remix-run/react";
 import { Github, LinkedinSquare, DevTo, MediumSquare, Twitter } from '@styled-icons/boxicons-logos';
 
 const SocialContainer = styled.section`
@@ -28,8 +29,8 @@ position: relative;
 }
 `;
 
-const Item = styled.a`
-color: #717171;
+const Item = styled(Link)`
+color: #bebebe;
 cursor: pointer;
 transition: all .2s ease-in-out;
 
@@ -42,11 +43,11 @@ transition: all .2s ease-in-out;
 const SocialBar = () => {
 	return (
 		<SocialContainer>
-			<Item href="#" target={"_blank"}><Github size="26" /></Item>
-			<Item href="#" target={"_blank"}><LinkedinSquare size="26" /></Item>
-			<Item href="#" target={"_blank"}><DevTo size="26" /></Item>
-			<Item href="#" target={"_blank"}><MediumSquare size="26" /></Item>
-			<Item href="#" target={"_blank"}><Twitter size="26" /></Item>
+			<Item to="https://github.com/akadot" target={"_blank"}><Github size="26" /></Item>
+			<Item to="https://www.linkedin.com/in/murilo-o/" target={"_blank"}><LinkedinSquare size="26" /></Item>
+			<Item to="https://dev.to/akadot_" target={"_blank"}><DevTo size="26" /></Item>
+			<Item to="https://medium.com/@akadot_" target={"_blank"}><MediumSquare size="26" /></Item>
+			<Item to="https://twitter.com/akadot_" target={"_blank"}><Twitter size="26" /></Item>
 		</SocialContainer>
 	)
 }
