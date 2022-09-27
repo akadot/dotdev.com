@@ -35,7 +35,6 @@ export default function App() {
           <Outlet />
           <Footer>Made with 🌻☕🎧 by akadot.</Footer>
         </Container>
-
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

@@ -25,7 +25,7 @@ color: #FEEF2A;
 `;
 
 const SubTextComponent = styled.p`
-color: #b9b9b9;
+color: #ffffff;
 margin-top: 1.1rem;
 `;
 

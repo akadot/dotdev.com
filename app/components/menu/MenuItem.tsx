@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "@remix-run/react";
 
-const MenuItem = styled.a`
+const MenuItem = styled(Link)`
 	color: #fff;
 	text-decoration: none;
 	font-weight: 500;
@@ -15,7 +16,7 @@ const MenuItem = styled.a`
 		position: absolute;
 		width: 0.2rem;
 		height: 1.35rem;
-		background-color: #FEEF2A;
+		background-color: ${props => props.theme.color};
 		left: -.3rem;
 		bottom: .1rem;
 		z-index: -1;
