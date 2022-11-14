@@ -31,11 +31,13 @@ position: relative;
 
 const Item = styled(Link)`
 color: #bebebe;
+opacity: .55;
 cursor: pointer;
 transition: all .2s ease-in-out;
 
 &:hover{
 	transform: scale(1.3);
+	opacity: 1;
 }
 `;
 

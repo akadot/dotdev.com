@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import cloudsBg from "~/styles/assets/clouds-bg-opacity.png"
 
 
 export const Container = styled.section`
@@ -10,11 +9,19 @@ justify-content: space-between;
 height: 100%;
 `;
 
-export const Footer = styled.p`
+export const FooterStr = styled.p`
 position: sticky;
+font-size: .8rem;
 padding-top: .5rem;
 padding-bottom: 1rem;
-color: "#717171";
+/* font-style: italic; */
+font-weight: 400;
+color:#777777;
+
+&& a{
+	color: #d3cc68;
+	text-decoration: none;
+}
 `;
 
 export default createGlobalStyle`
@@ -26,8 +33,7 @@ export default createGlobalStyle`
 	}
 
 	body{
-		background-image:url(${cloudsBg});
-		background-size:cover;
+		background-color: #0f0f0f;
 		color: #fff;
 		font-family: 'Prompt';
 		height: 100%;

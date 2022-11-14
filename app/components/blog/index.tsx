@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const BlogContainer = styled.section`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 flex-wrap: wrap;
 align-items: flex-start;
 justify-content: space-between;
