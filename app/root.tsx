@@ -1,7 +1,8 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node";
 import { Links, Scripts, ScrollRestoration, LiveReload, Meta, Outlet } from "@remix-run/react";
 
-import GlobalStyle, { Container, Footer } from './styles/global';
+import GlobalStyle, { Container, FooterStr } from './styles/global';
+import { themes } from '~/styles/themes'
 import Menu from "./components/menu";
 
 export const meta: MetaFunction = () => ({
@@ -32,8 +33,8 @@ export default function App() {
 
         <Container>
           <Menu />
-          <Outlet />
-          <Footer>Made with 🌻☕🎧 by akadot.</Footer>
+          <Outlet context={themes} />
+          <FooterStr>Made with 🌻☕🎧 by <a href="https://github.com/akadot" target="_blank" rel="noreferrer">akadot</a>.</FooterStr>
         </Container>
         <ScrollRestoration />
         <Scripts />

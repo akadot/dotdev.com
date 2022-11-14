@@ -1,7 +1,7 @@
 import type { LoaderFunction } from "@remix-run/node";
 import type { Post } from "~/models/blog.server";
 import { useLoaderData } from "@remix-run/react";
-import PostComponent from "~/components/blog/post";
+import PostComponent from "~/components/blog/post-alternative";
 import BlogContainer from "~/components/blog";
 import { getDEVTOPosts } from "~/models/blog.server";
 
@@ -17,7 +17,7 @@ export const loader: LoaderFunction = async () => {
 
 export default function () {
 	const posts = useLoaderData<LoaderData>();
-	console.log(posts)
+	// console.log(posts)
 
 	return (
 		<BlogContainer>
